@@ -125,7 +125,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -166,6 +166,80 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://raysonhan.com/2024/02/01/cpp-references/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="r4ys0n">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="r4ys0n">
+      <meta itemprop="description" content="Cybersecurity Artist">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | r4ys0n">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2024/02/01/cpp-references/" class="post-title-link" itemprop="url">cpp_references</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2024-01-31 20:45:18 / Modified: 07:45:45" itemprop="dateCreated datePublished" datetime="2024-01-31T20:45:18-05:00">2024-01-31</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h4 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h4><p>Use C++ references to define the character pointer char *p in the main function, then malloc to request space (size 100 bytes) within the subfunction, read the string via fgets(), and finally output it in the main function; note: you must use <strong>C++ References</strong> in the subfunction, and to read the string from standard input in C++, you need to use <strong>fgets(p,100,stdin)</strong>.</p>
+<h4 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h4><p>Enter a string, such as I love C language.</p>
+<h4 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h4><p>If the input is I love C language, then the output is I love C language.</p>
+<h4 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">allocateAndReadString</span><span class="params">(<span class="type">char</span>*&amp; str)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    str = <span class="built_in">static_cast</span>&lt;<span class="type">char</span>*&gt;(<span class="built_in">malloc</span>(<span class="number">100</span>));</span><br><span class="line">    <span class="built_in">fgets</span>(str,<span class="number">100</span>,stdin);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">char</span> *p;</span><br><span class="line">    <span class="built_in">allocateAndReadString</span>(p);</span><br><span class="line">    cout &lt;&lt; p &lt;&lt; endl;</span><br><span class="line">    <span class="built_in">free</span>(p);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
